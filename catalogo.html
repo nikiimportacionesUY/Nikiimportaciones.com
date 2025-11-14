@@ -1,802 +1,793 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media.css">
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Catálogo</title>
+<link href="style.css" rel="stylesheet"/>
+<link href="media.css" rel="stylesheet"/>
 </head>
-
 <body>
-    <header class="cabezal">
-        <a href="index.html">Niki Importaciones</a>
-        <nav class="menu">
-            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-        <ul>
-            <li onclick="alert('Contacto')">Contacto</li>
-            <li onclick="alert('Sobre nosotros')">Sobre nosotros</li>
-            <li onclick="alert('Iniciar sesión / Registrarse')">Iniciar sesión / Registrarse</li>
-        </ul> 
-    </nav>
-    </header>
-    
-    <main class="principal">
-          <aside class="filtros">
-            <button class="boton-filtros" onclick="toggleFiltros()">Filtros ▼</button>
-            <div id="menu-filtros" class="menu-filtros">
-                <label><input type="checkbox" value="hombre" onchange="filtrarProductos()"> Hombre</label>
-                <label><input type="checkbox" value="mujer" onchange="filtrarProductos()"> Mujer</label>
-                <label><input type="checkbox" value="diseñador" onchange="filtrarProductos()"> Diseñador</label>
-                <label><input type="checkbox" value="arabe" onchange="filtrarProductos()"> Árabe</label>
-                <label><input type="checkbox" value="cofres" onchange="filtrarProductos()"> Cofres</label>
-            </div>
-        </aside>
-
-        <section class="catalogo">
-            <h1>Catálogo</h1>
-            <div class="grillaCatalogo">
-                <article class="producto" data-genero="mujer hombre" data-categoria="diseñador arabe">
-                    <img src="images.jfif" alt="Miss Dior">
-                    <p class="nombreProducto">Testers
-                    <p class="precioProducto">10ml: $ <br>
+<header class="cabezal">
+<a href="index.html">Niki Importaciones</a>
+<nav class="menu">
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+<ul>
+<li onclick="alert('Contacto')">Contacto</li>
+<li onclick="alert('Sobre nosotros')">Sobre nosotros</li>
+<li onclick="alert('Iniciar sesión / Registrarse')">Iniciar sesión / Registrarse</li>
+</ul>
+</nav>
+</header>
+<main class="principal">
+<aside class="filtros">
+<button class="boton-filtros" onclick="toggleFiltros()">Filtros ▼</button>
+<div class="menu-filtros" id="menu-filtros">
+<label><input onchange="filtrarProductos()" type="checkbox" value="hombre"/> Hombre</label>
+<label><input onchange="filtrarProductos()" type="checkbox" value="mujer"/> Mujer</label>
+<label><input onchange="filtrarProductos()" type="checkbox" value="diseñador"/> Diseñador</label>
+<label><input onchange="filtrarProductos()" type="checkbox" value="arabe"/> Árabe</label>
+<label><input onchange="filtrarProductos()" type="checkbox" value="cofres"/> Cofres</label>
+</div>
+</aside>
+<section class="catalogo">
+<h1>Catálogo</h1>
+<div class="grillaCatalogo">
+<article class="producto" data-categoria="diseñador arabe" data-genero="mujer hombre">
+<img alt="Miss Dior" src="img/images.jfif"/>
+<p class="nombreProducto">Testers
+                    <p class="precioProducto">10ml: $ <br/>
                         5ml: $
                     </p>
-                </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="ysl-edp-black-opium-90ml-foto1-1640353464.webp"alt="Perfume #">
-                    <p class="nombreProducto">Black Opium
-                    <p class="precioProducto">90ml: $9600 <br>
-                        50ml: $7500 <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/ysl-edp-black-opium-90ml-foto1-1640353464.webp"/>
+<p class="nombreProducto">Black Opium
+                    <p class="precioProducto">90ml: $9600 <br/>
+                        50ml: $7500 <br/>
                         30ml: $5100
                     </p>
-                    <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="perfume-ysl-black-opium-over-red-edp-50ml-foto1.webp" alt="Perfume #">
-                    <p class="nombreProducto">Black Opium Over Red</p>
-                    <p class="precioProducto">90ml: $9300<br>
-                        50ml: $6990  <br>
+<button class="agregarAlCarrito">Sellado/Tester/Decant</button>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/perfume-ysl-black-opium-over-red-edp-50ml-foto1.webp"/>
+<p class="nombreProducto">Black Opium Over Red</p>
+<p class="precioProducto">90ml: $9300<br/>
+                        50ml: $6990  <br/>
                         30ml: $4900
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="D_NQ_NP_2X_826278-MLU73563675233_122023-F.webp" alt="Perfume #">
-                    <p class="nombreProducto">Black Opium Illicit Green</p>
-                    <p class="precioProducto">75ml: $6900 <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/D_NQ_NP_2X_826278-MLU73563675233_122023-F.webp"/>
+<p class="nombreProducto">Black Opium Illicit Green</p>
+<p class="precioProducto">75ml: $6900 <br/>
                     
                         30ml: $4900
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="Good girl very.webp" alt="Perfume #">
-                    <p class="nombreProducto">Good Girl Very</p>
-                    <p class="precioProducto">100ml: <br>
-                        50ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/Good girl very.webp"/>
+<p class="nombreProducto">Good Girl Very</p>
+<p class="precioProducto">100ml: <br/>
+                        50ml:  <br/>
                         30ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="good girl. blush elixr.jpg" alt="Perfume #">
-                    <p class="nombreProducto">Good Girl Blush Elixir</p>
-                    <p class="precioProducto">100ml: <br>
-                        50ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/good girl. blush elixr.jpg"/>
+<p class="nombreProducto">Good Girl Blush Elixir</p>
+<p class="precioProducto">100ml: <br/>
+                        50ml:  <br/>
                         30ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="good girl. Blush.jpg" alt="Perfume #">
-                    <p class="nombreProducto">Good Girl Blush</p>
-                    <p class="precioProducto">100ml: <br>
-                        50ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/good girl. Blush.jpg"/>
+<p class="nombreProducto">Good Girl Blush</p>
+<p class="precioProducto">100ml: <br/>
+                        50ml:  <br/>
                         30ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="good girl edp.jpg" alt="Perfume #">
-                    <p class="nombreProducto">Good Girl</p>
-                    <p class="precioProducto">100ml: <br>
-                        50ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/good girl edp.jpg"/>
+<p class="nombreProducto">Good Girl</p>
+<p class="precioProducto">100ml: <br/>
+                        50ml:  <br/>
                         30ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="idole edp.webp" alt="Perfume #">
-                    <p class="nombreProducto">Idole</p>
-                    <p class="precioProducto">100ml: $7690 <br>
-                        50ml: $6650  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/idole edp.webp"/>
+<p class="nombreProducto">Idole</p>
+<p class="precioProducto">100ml: $7690 <br/>
+                        50ml: $6650  <br/>
                         25ml: $3600
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="idole nectar.jpg" alt="Perfume #">
-                    <p class="nombreProducto">Idole Nectar</p>
-                    <p class="precioProducto">100ml: $7690 <br>
-                        50ml: $6650  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/idole nectar.jpg"/>
+<p class="nombreProducto">Idole Nectar</p>
+<p class="precioProducto">100ml: $7690 <br/>
+                        50ml: $6650  <br/>
                         25ml: $3600
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="idole now.avif" alt="Perfume #">
-                    <p class="nombreProducto">Idole Now</p>
-                    <p class="precioProducto">100ml: $7690 <br>
-                        50ml: $6650  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/idole now.avif"/>
+<p class="nombreProducto">Idole Now</p>
+<p class="precioProducto">100ml: $7690 <br/>
+                        50ml: $6650  <br/>
                         25ml: $3600
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="idole power.webp" alt="Perfume #">
-                    <p class="nombreProducto">Idole Power</p>
-                    <p class="precioProducto">100ml: $7690 <br>
-                        50ml: $6650  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/idole power.webp"/>
+<p class="nombreProducto">Idole Power</p>
+<p class="precioProducto">100ml: $7690 <br/>
+                        50ml: $6650  <br/>
                         25ml: $3600
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="my way edp.png" alt="Perfume #">
-                    <p class="nombreProducto">My Way</p>
-                    <p class="precioProducto">90ml: $8700 <br>
-                        50ml: $5900  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/my way edp.png"/>
+<p class="nombreProducto">My Way</p>
+<p class="precioProducto">90ml: $8700 <br/>
+                        50ml: $5900  <br/>
                         30ml: $3500
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="myway intense.jpg" alt="Perfume #">
-                    <p class="nombreProducto">My Way Intense</p>
-                    <p class="precioProducto">90ml: $8700 <br>
-                        50ml: $5900  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/myway intense.jpg"/>
+<p class="nombreProducto">My Way Intense</p>
+<p class="precioProducto">90ml: $8700 <br/>
+                        50ml: $5900  <br/>
                         30ml: $3500
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="myway nectar.jpg" alt="Perfume #">
-                    <p class="nombreProducto">My Way Nectar</p>
-                    <p class="precioProducto">90ml: $8700 <br>
-                        50ml: $5900  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/myway nectar.jpg"/>
+<p class="nombreProducto">My Way Nectar</p>
+<p class="precioProducto">90ml: $8700 <br/>
+                        50ml: $5900  <br/>
                         30ml: $3500
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="myway ylang.jpg" alt="Perfume #">
-                    <p class="nombreProducto">My Way Ylang</p>
-                    <p class="precioProducto">90ml: $8700 <br>
-                        50ml: $5900  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/myway ylang.jpg"/>
+<p class="nombreProducto">My Way Ylang</p>
+<p class="precioProducto">90ml: $8700 <br/>
+                        50ml: $5900  <br/>
                         30ml: $3500
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="Sí. edp.jpg" alt="Perfume #">
-                    <p class="nombreProducto">Sí femme</p>
-                    <p class="precioProducto">100ml: <br>
-                        50ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/Sí. edp.jpg"/>
+<p class="nombreProducto">Sí femme</p>
+<p class="precioProducto">100ml: <br/>
+                        50ml:  <br/>
                         30ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="Sí Int.webp" alt="Perfume #">
-                    <p class="nombreProducto">Sí Intense</p>
-                    <p class="precioProducto">100ml: <br>
-                        50ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/Sí Int.webp"/>
+<p class="nombreProducto">Sí Intense</p>
+<p class="precioProducto">100ml: <br/>
+                        50ml:  <br/>
                         30ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="Sí Passione.jpg" alt="Perfume #">
-                    <p class="nombreProducto">Sí Passione</p>
-                    <p class="precioProducto">100ml: $7990<br>
-                        50ml: $5990 <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/Sí Passione.jpg"/>
+<p class="nombreProducto">Sí Passione</p>
+<p class="precioProducto">100ml: $7990<br/>
+                        50ml: $5990 <br/>
                         30ml: $4990
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="Sí passione int.jpg" alt="Perfume #">
-                    <p class="nombreProducto">Sí Passione Intense</p>
-                    <p class="precioProducto">00ml: $7<br>
-                        50ml: $6500 <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/Sí passione int.jpg"/>
+<p class="nombreProducto">Sí Passione Intense</p>
+<p class="precioProducto">00ml: $7<br/>
+                        50ml: $6500 <br/>
                         30ml: $5000
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="libre edp.jpg" alt="Perfume #">
-                    <p class="nombreProducto">Libre EDP</p>
-                    <p class="precioProducto">100ml: <br>
-                        50ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/libre edp.jpg"/>
+<p class="nombreProducto">Libre EDP</p>
+<p class="precioProducto">100ml: <br/>
+                        50ml:  <br/>
                         30ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="libre ed.jpg" alt="Perfume #">
-                    <p class="nombreProducto">Libre EDT</p>
-                    <p class="precioProducto">100ml: <br>
-                        50ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/libre ed.jpg"/>
+<p class="nombreProducto">Libre EDT</p>
+<p class="precioProducto">100ml: <br/>
+                        50ml:  <br/>
                         30ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="Libre Flowers & Flames.webp" alt="Perfume #">
-                    <p class="nombreProducto">Libre Flowers & Flames</p>
-                    <p class="precioProducto">100ml: <br>
-                        50ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/Libre Flowers &amp; Flames.webp"/>
+<p class="nombreProducto">Libre Flowers &amp; Flames</p>
+<p class="precioProducto">100ml: <br/>
+                        50ml:  <br/>
                         30ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="LIBRE L´ABSOLU PLATINe.avif" alt="Perfume #">
-                    <p class="nombreProducto">Libre L´absolu Platine</p>
-                    <p class="precioProducto">100ml: <br>
-                        50ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/LIBRE L´ABSOLU PLATINe.avif"/>
+<p class="nombreProducto">Libre L´absolu Platine</p>
+<p class="precioProducto">100ml: <br/>
+                        50ml:  <br/>
                         30ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="La vie est belle.jpg" alt="Perfume #">
-                    <p class="nombreProducto">La Vie Est Belle</p>
-                    <p class="precioProducto">100ml: <br>
-                        50ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/La vie est belle.jpg"/>
+<p class="nombreProducto">La Vie Est Belle</p>
+<p class="precioProducto">100ml: <br/>
+                        50ml:  <br/>
                         30ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="La vie est belle elixir.jpg" alt="Perfume #">
-                    <p class="nombreProducto">La Vie Est Belle Elixir</p>
-                    <p class="precioProducto">100ml: <br>
-                        50ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/La vie est belle elixir.jpg"/>
+<p class="nombreProducto">La Vie Est Belle Elixir</p>
+<p class="precioProducto">100ml: <br/>
+                        50ml:  <br/>
                         30ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="La vie est belle extrait perfum.jpg" alt="Perfume #">
-                    <p class="nombreProducto">La Vie Est Belle Extrait</p>
-                    <p class="precioProducto">100ml: <br>
-                        50ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/La vie est belle extrait perfum.jpg"/>
+<p class="nombreProducto">La Vie Est Belle Extrait</p>
+<p class="precioProducto">100ml: <br/>
+                        50ml:  <br/>
                         30ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="La vie est belle rose extraordinarie.jpg" alt="Perfume #">
-                    <p class="nombreProducto">LVEB rose extraordinarie</p>
-                    <p class="precioProducto">100ml: <br>
-                        50ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/La vie est belle rose extraordinarie.jpg"/>
+<p class="nombreProducto">LVEB rose extraordinarie</p>
+<p class="precioProducto">100ml: <br/>
+                        50ml:  <br/>
                         30ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="hombre" data-categoria="Cofres">
-                    <img src="Paco Rabanne One Million Estuche EDT 100 ml + EDT 20 ml.webp" alt="Perfume #">
-                    <p class="nombreProducto">Cofre One Million EDT</p>
-                    <p class="precioProducto"> 100ml+20ml: $5800 <br>
-                          <br>
-                        <br>
-                    <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="hombre" data-categoria="diseñador">
-                    <img src="Giorgio Armani Acqua Di Gio edt.jpg" alt="Perfume #">
-                    <p class="nombreProducto">Acqua di gio edt</p>
-                    <p class="precioProducto">100ml: $7500 <br>
-                        50ml: $4900  <br>
+</p></article>
+<article class="producto" data-categoria="Cofres" data-genero="hombre">
+<img alt="Perfume #" src="img/Paco Rabanne One Million Estuche EDT 100 ml + EDT 20 ml.webp"/>
+<p class="nombreProducto">Cofre One Million EDT</p>
+<p class="precioProducto"> 100ml+20ml: $5800 <br/>
+<br/>
+<br/>
+<button class="agregarAlCarrito">Sellado/Tester/Decant</button>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="hombre">
+<img alt="Perfume #" src="img/Giorgio Armani Acqua Di Gio edt.jpg"/>
+<p class="nombreProducto">Acqua di gio edt</p>
+<p class="precioProducto">100ml: $7500 <br/>
+                        50ml: $4900  <br/>
                         30ml: $3500
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="hombre" data-categoria="diseñador">
-                    <img src="Giorgio Armani Acqua Di Gio Parfum.webp" alt="Perfume #">
-                    <p class="nombreProducto">Acqua di gio</p>
-                    <p class="precioProducto">100ml: $8500 <br>
-                        50ml: $5900 <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="hombre">
+<img alt="Perfume #" src="img/Giorgio Armani Acqua Di Gio Parfum.webp"/>
+<p class="nombreProducto">Acqua di gio</p>
+<p class="precioProducto">100ml: $8500 <br/>
+                        50ml: $5900 <br/>
                         30ml: $3900
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="hombre" data-categoria="diseñador">
-                    <img src="Perfume Giorgio Armani Acqua di Gio Profondo Parfum Men.jpg" alt="Perfume #">
-                    <p class="nombreProducto">Acqua di gio profondo</p>
-                    <p class="precioProducto">100ml: $7900 <br>
-                        50ml: $5900 <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="hombre">
+<img alt="Perfume #" src="img/Perfume Giorgio Armani Acqua di Gio Profondo Parfum Men.jpg"/>
+<p class="nombreProducto">Acqua di gio profondo</p>
+<p class="precioProducto">100ml: $7900 <br/>
+                        50ml: $5900 <br/>
                         30ml: $4900
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="hombre" data-categoria="diseñador">
-                    <img src="Azzaro The Most Wanted Intense.jpg" alt="Perfume #">
-                    <p class="nombreProducto">Azzaro TMW Intense</p>
-                    <p class="precioProducto">100ml: $5900<br>
-                         <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="hombre">
+<img alt="Perfume #" src="img/Azzaro The Most Wanted Intense.jpg"/>
+<p class="nombreProducto">Azzaro TMW Intense</p>
+<p class="precioProducto">100ml: $5900<br/>
+<br/>
                         50ml: $4600 
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="hombre" data-categoria="diseñador">
-                    <img src="Yves Saint Laurent Y Edp.jpg" alt="Perfume #">
-                    <p class="nombreProducto">YSL Y edp</p>
-                    <p class="precioProducto">100ml: <br>
-                        50ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="hombre">
+<img alt="Perfume #" src="img/Yves Saint Laurent Y Edp.jpg"/>
+<p class="nombreProducto">YSL Y edp</p>
+<p class="precioProducto">100ml: <br/>
+                        50ml:  <br/>
                         30ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="hombre" data-categoria="diseñador">
-                    <img src="Yves Saint Laurent Y Edt.jpg" alt="Perfume #">
-                    <p class="nombreProducto">YSL Y edt</p>
-                    <p class="precioProducto">100ml: <br>
-                        50ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="hombre">
+<img alt="Perfume #" src="img/Yves Saint Laurent Y Edt.jpg"/>
+<p class="nombreProducto">YSL Y edt</p>
+<p class="precioProducto">100ml: <br/>
+                        50ml:  <br/>
                         30ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="hombre" data-categoria="diseñador">
-                    <img src="Yves Saint Laurent Y le perf.webp" alt="Perfume #">
-                    <p class="nombreProducto">YSL Y LePerfum</p>
-                    <p class="precioProducto">100ml: <br>
-                        50ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="hombre">
+<img alt="Perfume #" src="img/Yves Saint Laurent Y le perf.webp"/>
+<p class="nombreProducto">YSL Y LePerfum</p>
+<p class="precioProducto">100ml: <br/>
+                        50ml:  <br/>
                         30ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="hombre" data-categoria="diseñador">
-                    <img src="Ch Men Pasión Edp 100 ml.png" alt="Perfume #">
-                    <p class="nombreProducto">Ch men Pasion</p>
-                    <p class="precioProducto">100ml: <br>
-                        50ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="hombre">
+<img alt="Perfume #" src="img/Ch Men Pasión Edp 100 ml.png"/>
+<p class="nombreProducto">Ch men Pasion</p>
+<p class="precioProducto">100ml: <br/>
+                        50ml:  <br/>
                         30ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="Jean Paul Gaultier La Belle Le Parfum EDP 30ml for Women.jpg " alt="Perfume #">
-                    <p class="nombreProducto">La Belle LePerfum</p>
-                    <p class="precioProducto">100ml: $7200<br>
-                         <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/Jean Paul Gaultier La Belle Le Parfum EDP 30ml for Women.jpg "/>
+<p class="nombreProducto">La Belle LePerfum</p>
+<p class="precioProducto">100ml: $7200<br/>
+<br/>
                         50ml: $5900 
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="hombre" data-categoria="diseñador">
-                    <img src="Jean Paul Gaultier Le Male Edt 75 ml.jpg" alt="Perfume #">
-                    <p class="nombreProducto">Le Male EDT</p>
-                    <p class="precioProducto"> 200ml: $6900 <br>
-                    125ml: $5900 <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="hombre">
+<img alt="Perfume #" src="img/Jean Paul Gaultier Le Male Edt 75 ml.jpg"/>
+<p class="nombreProducto">Le Male EDT</p>
+<p class="precioProducto"> 200ml: $6900 <br/>
+                    125ml: $5900 <br/>
                         75ml: $4500
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="Perfume Jean Paul Gaultier Divine Femme EDP.jpg" alt="Perfume #">
-                    <p class="nombreProducto">Divine Femme</p>
-                    <p class="precioProducto">100ml: $<br>
-                        50ml: $  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/Perfume Jean Paul Gaultier Divine Femme EDP.jpg"/>
+<p class="nombreProducto">Divine Femme</p>
+<p class="precioProducto">100ml: $<br/>
+                        50ml: $  <br/>
                         30ml: $
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="Perfume Jean Paul Gaultier La Belle Femme.jpg" alt="Perfume #">
-                    <p class="nombreProducto">La Belle femme</p>
-                    <p class="precioProducto">100ml: $6900<br>
-                         <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/Perfume Jean Paul Gaultier La Belle Femme.jpg"/>
+<p class="nombreProducto">La Belle femme</p>
+<p class="precioProducto">100ml: $6900<br/>
+<br/>
                         50ml: $5900 
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="Perfume Jean Paul Gaultier La Belle Paradise Garden EDP.jpg" alt="Perfume #">
-                    <p class="nombreProducto">La Belle Paradise</p>
-                    <p class="precioProducto">100ml: $7200<br>
-                         <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/Perfume Jean Paul Gaultier La Belle Paradise Garden EDP.jpg"/>
+<p class="nombreProducto">La Belle Paradise</p>
+<p class="precioProducto">100ml: $7200<br/>
+<br/>
                         50ml: $4100 
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="hombre" data-categoria="diseñador">
-                    <img src="Perfume Jean Paul Gaultier Le Beau Edt 125 ml.webp" alt="Perfume #">
-                    <p class="nombreProducto">Le Baut EDT</p>
-                    <p class="precioProducto">125ml: <br>
-                        100ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="hombre">
+<img alt="Perfume #" src="img/Perfume Jean Paul Gaultier Le Beau Edt 125 ml.webp"/>
+<p class="nombreProducto">Le Baut EDT</p>
+<p class="precioProducto">125ml: <br/>
+                        100ml:  <br/>
                         50ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="hombre" data-categoria="diseñador">
-                    <img src="Perfume Jean Paul Gaultier Le Beau Paradise Garden Men EDP 125 ml.jpg" alt="Perfume #">
-                    <p class="nombreProducto">Le Bau Paradise</p>
-                    <p class="precioProducto">125ml: <br>
-                        100ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="hombre">
+<img alt="Perfume #" src="img/Perfume Jean Paul Gaultier Le Beau Paradise Garden Men EDP 125 ml.jpg"/>
+<p class="nombreProducto">Le Bau Paradise</p>
+<p class="precioProducto">125ml: <br/>
+                        100ml:  <br/>
                         50ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="hombre" data-categoria="diseñador">
-                    <img src="Jpg Le Male Elixir Edp 125ml.jpg" alt="Perfume #">
-                    <p class="nombreProducto">Le Male Elixir</p>
-                    <p class="precioProducto">125ml: <br>
-                        100ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="hombre">
+<img alt="Perfume #" src="img/Jpg Le Male Elixir Edp 125ml.jpg"/>
+<p class="nombreProducto">Le Male Elixir</p>
+<p class="precioProducto">125ml: <br/>
+                        100ml:  <br/>
                         50ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="hombre" data-categoria="diseñador">
-                    <img src="my self LEperf. 60.100.150.webp" alt="Perfume #">
-                    <p class="nombreProducto">MySelf LePerfum</p>
-                    <p class="precioProducto">100ml: <br>
-                        50ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="hombre">
+<img alt="Perfume #" src="img/my self LEperf. 60.100.150.webp"/>
+<p class="nombreProducto">MySelf LePerfum</p>
+<p class="precioProducto">100ml: <br/>
+                        50ml:  <br/>
                         30ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="hombre" data-categoria="diseñador">
-                    <img src="my self perf. 60.100.150.webp" alt="Perfume #">
-                    <p class="nombreProducto">MySelf EDP</p>
-                    <p class="precioProducto">100ml: $7900 <br>
-                        50ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="hombre">
+<img alt="Perfume #" src="img/my self perf. 60.100.150.webp"/>
+<p class="nombreProducto">MySelf EDP</p>
+<p class="precioProducto">100ml: $7900 <br/>
+                        50ml:  <br/>
                         30ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="hombre" data-categoria="diseñador">
-                    <img src="polo rojo.webp" alt="Perfume #">
-                    <p class="nombreProducto">Polo Rojo</p>
-                    <p class="precioProducto">100ml: <br>
-                        50ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="hombre">
+<img alt="Perfume #" src="img/polo rojo.webp"/>
+<p class="nombreProducto">Polo Rojo</p>
+<p class="precioProducto">100ml: <br/>
+                        50ml:  <br/>
                         30ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="hombre" data-categoria="diseñador">
-                    <img src="Polo Blue.jpg" alt="Perfume #">
-                    <p class="nombreProducto">Polo Azul</p>
-                    <p class="precioProducto">100ml: <br>
-                        50ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="hombre">
+<img alt="Perfume #" src="img/Polo Blue.jpg"/>
+<p class="nombreProducto">Polo Azul</p>
+<p class="precioProducto">100ml: <br/>
+                        50ml:  <br/>
                         30ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="hombre" data-categoria="diseñador">
-                    <img src="Ralphs club.jpg" alt="Perfume #">
-                    <p class="nombreProducto">Ralphs Club</p>
-                    <p class="precioProducto">100ml: <br>
-                        50ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="hombre">
+<img alt="Perfume #" src="img/Ralphs club.jpg"/>
+<p class="nombreProducto">Ralphs Club</p>
+<p class="precioProducto">100ml: <br/>
+                        50ml:  <br/>
                         30ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="romance. ralph lauren.webp" alt="Perfume #">
-                    <p class="nombreProducto">Romance Ralph Lauren</p>
-                    <p class="precioProducto">100ml: <br>
-                        50ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/romance. ralph lauren.webp"/>
+<p class="nombreProducto">Romance Ralph Lauren</p>
+<p class="precioProducto">100ml: <br/>
+                        50ml:  <br/>
                         30ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="pasion.jpg" alt="Perfume #">
-                    <p class="nombreProducto">Ch Pasion fem</p>
-                    <p class="precioProducto">100ml: <br>
-                        50ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/pasion.jpg"/>
+<p class="nombreProducto">Ch Pasion fem</p>
+<p class="precioProducto">100ml: <br/>
+                        50ml:  <br/>
                         30ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="Dolce & Gabbana Light Blue EDT.jpg" alt="Perfume #">
-                    <p class="nombreProducto">Light Blue EDT</p>
-                    <p class="precioProducto">100ml: <br>
-                        50ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/Dolce &amp; Gabbana Light Blue EDT.jpg"/>
+<p class="nombreProducto">Light Blue EDT</p>
+<p class="precioProducto">100ml: <br/>
+                        50ml:  <br/>
                         30ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="L'imperatrice Para Mujer De Dolce &gabbana edt.webp" alt="Perfume #">
-                    <p class="nombreProducto">L'imperatrice EDT fem</p>
-                    <p class="precioProducto">100ml: <br>
-                        50ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/L'imperatrice Para Mujer De Dolce &amp;gabbana edt.webp"/>
+<p class="nombreProducto">L'imperatrice EDT fem</p>
+<p class="precioProducto">100ml: <br/>
+                        50ml:  <br/>
                         30ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="Paco Rabanne Olympea EDP 80 ml.jpg" alt="Perfume #">
-                    <p class="nombreProducto">Olympea EDP</p>
-                    <p class="precioProducto">100ml: <br>
-                        50ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/Paco Rabanne Olympea EDP 80 ml.jpg"/>
+<p class="nombreProducto">Olympea EDP</p>
+<p class="precioProducto">100ml: <br/>
+                        50ml:  <br/>
                         30ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="Paco Rabanne Olympea Parfum 80ml.jpg" alt="Perfume #">
-                    <p class="nombreProducto">Olympea Perfum</p>
-                    <p class="precioProducto">100ml: <br>
-                        50ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/Paco Rabanne Olympea Parfum 80ml.jpg"/>
+<p class="nombreProducto">Olympea Perfum</p>
+<p class="precioProducto">100ml: <br/>
+                        50ml:  <br/>
                         30ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="homnre" data-categoria="diseñador">
-                    <img src="versace Dylan Blue.jpg" alt="Perfume #">
-                    <p class="nombreProducto">Versace Dylan Blue</p>
-                    <p class="precioProducto">100ml: <br>
-                        50ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="homnre">
+<img alt="Perfume #" src="img/versace Dylan Blue.jpg"/>
+<p class="nombreProducto">Versace Dylan Blue</p>
+<p class="precioProducto">100ml: <br/>
+                        50ml:  <br/>
                         30ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="hombre" data-categoria="diseñador">
-                    <img src="Versace Eros Energy.jpg" alt="Perfume #">
-                    <p class="nombreProducto">Versace Eros Energy</p>
-                    <p class="precioProducto">100ml: <br>
-                        50ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="hombre">
+<img alt="Perfume #" src="img/Versace Eros Energy.jpg"/>
+<p class="nombreProducto">Versace Eros Energy</p>
+<p class="precioProducto">100ml: <br/>
+                        50ml:  <br/>
                         30ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="hombre" data-categoria="diseñador">
-                    <img src="Versace Eros Flame.webp" alt="Perfume #">
-                    <p class="nombreProducto">Versace Eros Flame</p>
-                    <p class="precioProducto">100ml: <br>
-                        50ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="hombre">
+<img alt="Perfume #" src="img/Versace Eros Flame.webp"/>
+<p class="nombreProducto">Versace Eros Flame</p>
+<p class="precioProducto">100ml: <br/>
+                        50ml:  <br/>
                         30ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="hombre" data-categoria="diseñador">
-                    <img src="Versace Eros.jpg" alt="Perfume #">
-                    <p class="nombreProducto">Versace Eros</p>
-                    <p class="precioProducto">100ml: <br>
-                        50ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="hombre">
+<img alt="Perfume #" src="img/Versace Eros.jpg"/>
+<p class="nombreProducto">Versace Eros</p>
+<p class="precioProducto">100ml: <br/>
+                        50ml:  <br/>
                         30ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="hombre" data-categoria="diseñador">
-                    <img src="Perfume Rabanne Phantom Men EDT 100 ml.jpg" alt="Perfume #">
-                    <p class="nombreProducto">Phantom EDT</p>
-                    <p class="precioProducto">100ml: $4900 <br>
-                          <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="hombre">
+<img alt="Perfume #" src="img/Perfume Rabanne Phantom Men EDT 100 ml.jpg"/>
+<p class="nombreProducto">Phantom EDT</p>
+<p class="precioProducto">100ml: $4900 <br/>
+<br/>
                         50ml: $4100
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                    </article>
-                <article class="producto" data-genero="hombre" data-categoria="diseñador">
-                    <img src="Perfume Paco Rabanne phantom intense edp 100ml..webp" alt="Perfume #">
-                    <p class="nombreProducto">Phantom intense</p>
-                    <p class="precioProducto">100ml: $5500 <br>
-                          <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="hombre">
+<img alt="Perfume #" src="img/Perfume Paco Rabanne phantom intense edp 100ml..webp"/>
+<p class="nombreProducto">Phantom intense</p>
+<p class="precioProducto">100ml: $5500 <br/>
+<br/>
                         50ml: $4900
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                    </article>
-                <article class="producto" data-genero="hombre" data-categoria="diseñador">
-                    <img src="Perfume Paco Rabanne Phantom Men Parfum 100 ml.jpg" alt="Perfume #">
-                    <p class="nombreProducto">Phantom perfum</p>
-                    <p class="precioProducto">100ml: $6100 <br>
-                          <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="hombre">
+<img alt="Perfume #" src="img/Perfume Paco Rabanne Phantom Men Parfum 100 ml.jpg"/>
+<p class="nombreProducto">Phantom perfum</p>
+<p class="precioProducto">100ml: $6100 <br/>
+<br/>
                         50ml: $4500
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                    </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="fame edp.jpg" alt="Perfume #">
-                    <p class="nombreProducto">Fame EDP</p>
-                    <p class="precioProducto">80ml: $5500 <br>
-                          <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/fame edp.jpg"/>
+<p class="nombreProducto">Fame EDP</p>
+<p class="precioProducto">80ml: $5500 <br/>
+<br/>
                         50ml: $4000
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                    </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="Perfume Paco Rabanne Fame Parfum 50ml.webp" alt="Perfume #">
-                    <p class="nombreProducto">Fame Perfum</p>
-                    <p class="precioProducto">80ml: $5900 <br>
-                         <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/Perfume Paco Rabanne Fame Parfum 50ml.webp"/>
+<p class="nombreProducto">Fame Perfum</p>
+<p class="precioProducto">80ml: $5900 <br/>
+<br/>
                         50ml: $4100
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                    </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="Perfume Rabanne Fame Intense Femme.jpg" alt="Perfume #">
-                    <p class="nombreProducto">Fame Intense</p>
-                    <p class="precioProducto">80ml: $5990 <br>
-                       <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/Perfume Rabanne Fame Intense Femme.jpg"/>
+<p class="nombreProducto">Fame Intense</p>
+<p class="precioProducto">80ml: $5990 <br/>
+<br/>
                         50ml: $4600
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                    </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="la bomba ch.jpg" alt="Perfume #">
-                    <p class="nombreProducto">La Bomba CH</p>
-                    <p class="precioProducto">80ml: $7900 <br>
-                        <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/la bomba ch.jpg"/>
+<p class="nombreProducto">La Bomba CH</p>
+<p class="precioProducto">80ml: $7900 <br/>
+<br/>
                         30ml: $4100
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                    </article>
-                <article class="producto" data-genero="hombre" data-categoria="diseñador">
-                    <img src="uomo extradose.webp" alt="Perfume #">
-                    <p class="nombreProducto">BIR Uomo Extradose</p>
-                    <p class="precioProducto">100ml: $7500 <br>
-                          <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="hombre">
+<img alt="Perfume #" src="img/uomo extradose.webp"/>
+<p class="nombreProducto">BIR Uomo Extradose</p>
+<p class="precioProducto">100ml: $7500 <br/>
+<br/>
                         50ml: $5800
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                    </article>
-                <article class="producto" data-genero="hombre" data-categoria="diseñador">
-                    <img src="uomo green stravaganza.jpg" alt="Perfume #">
-                    <p class="nombreProducto">BIR Uomo Stravaganza</p>
-                    <p class="precioProducto">100ml: $7500<br>
-                         <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="hombre">
+<img alt="Perfume #" src="img/uomo green stravaganza.jpg"/>
+<p class="nombreProducto">BIR Uomo Stravaganza</p>
+<p class="precioProducto">100ml: $7500<br/>
+<br/>
                         50ml: $5800
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                    </article>
-                <article class="producto" data-genero="hombre" data-categoria="diseñador">
-                    <img src="uomo intense.webp" alt="Perfume #">
-                    <p class="nombreProducto">BIR Uomo Intense</p>
-                    <p class="precioProducto">100ml: $8500 <br>
-                          <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="hombre">
+<img alt="Perfume #" src="img/uomo intense.webp"/>
+<p class="nombreProducto">BIR Uomo Intense</p>
+<p class="precioProducto">100ml: $8500 <br/>
+<br/>
                         50ml: $6390
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                    </article>
-                <article class="producto" data-genero="hombre" data-categoria="diseñador">
-                    <img src="uomo the gold.webp" alt="Perfume #">
-                    <p class="nombreProducto">BIR Uomo The Gold</p>
-                    <p class="precioProducto">100ml: $7900 <br>
-                         <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="hombre">
+<img alt="Perfume #" src="img/uomo the gold.webp"/>
+<p class="nombreProducto">BIR Uomo The Gold</p>
+<p class="precioProducto">100ml: $7900 <br/>
+<br/>
                         50ml: $6500
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                    </article>
-                <article class="producto" data-genero="hombre" data-categoria="diseñador">
-                    <img src="bir yellow dream uomo" alt="Perfume #">
-                    <p class="nombreProducto">BIR Uomo Yellow Dream</p>
-                    <p class="precioProducto">100ml: $7300<br>
-                       <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="hombre">
+<img alt="Perfume #" src="img/bir yellow dream uomo"/>
+<p class="nombreProducto">BIR Uomo Yellow Dream</p>
+<p class="precioProducto">100ml: $7300<br/>
+<br/>
                         50ml: $5300
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                    </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="bir edp m" alt="Perfume #">
-                    <p class="nombreProducto">BIR Donna EDP</p>
-                    <p class="precioProducto">100ml: $9600 <br>
-                         <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/bir edp m"/>
+<p class="nombreProducto">BIR Donna EDP</p>
+<p class="precioProducto">100ml: $9600 <br/>
+<br/>
                         50ml: $6800
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                    </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="bir coral fantasy m.webp" alt="Perfume #">
-                    <p class="nombreProducto">BIR Donna CoralFantasy</p>
-                    <p class="precioProducto">100ml: $8900 <br>
-                          <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/bir coral fantasy m.webp"/>
+<p class="nombreProducto">BIR Donna CoralFantasy</p>
+<p class="precioProducto">100ml: $8900 <br/>
+<br/>
                         50ml: $6900
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                    </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="bir green stravaganza.jpg" alt="Perfume #">
-                    <p class="nombreProducto">BIR Donna Stravaganza</p>
-                    <p class="precioProducto">100ml: $8900 <br>
-                          <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/bir green stravaganza.jpg"/>
+<p class="nombreProducto">BIR Donna Stravaganza</p>
+<p class="precioProducto">100ml: $8900 <br/>
+<br/>
                         50ml: $6300
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                    </article>
-                <article class="producto" data-genero="diseñador" data-categoria="mujer">
-                    <img src="bir intense.jpg" alt="Perfume #">
-                    <p class="nombreProducto">BIR Donna Intense</p>
-                    <p class="precioProducto">100ml: $10200 <br>
-                          <br>
+</p></article>
+<article class="producto" data-categoria="mujer" data-genero="diseñador">
+<img alt="Perfume #" src="img/bir intense.jpg"/>
+<p class="nombreProducto">BIR Donna Intense</p>
+<p class="precioProducto">100ml: $10200 <br/>
+<br/>
                         50ml: $7500
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                    </article>
-                <article class="producto" data-genero="hombre" data-categoria="diseñador">
-                    <img src="bir extradose donna.webp" alt="Perfume #">
-                    <p class="nombreProducto">BIR Donna ExtradoseIntense</p>
-                    <p class="precioProducto">100ml: $10800 <br>
-                          <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="hombre">
+<img alt="Perfume #" src="img/bir extradose donna.webp"/>
+<p class="nombreProducto">BIR Donna ExtradoseIntense</p>
+<p class="precioProducto">100ml: $10800 <br/>
+<br/>
                         50ml: $8300
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                    </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="bir the gold.jpg" alt="Perfume #">
-                    <p class="nombreProducto">BIR Donna The Gold</p>
-                    <p class="precioProducto">100ml: $8900 <br>
-                         <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/bir the gold.jpg"/>
+<p class="nombreProducto">BIR Donna The Gold</p>
+<p class="precioProducto">100ml: $8900 <br/>
+<br/>
                         50ml: $6900
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                    </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="bir yellow dream.jpg" alt="Perfume #">
-                    <p class="nombreProducto">BIR Donna Yellow Dream</p>
-                    <p class="precioProducto">100ml: $8600 <br>
-                        <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/bir yellow dream.jpg"/>
+<p class="nombreProducto">BIR Donna Yellow Dream</p>
+<p class="precioProducto">100ml: $8600 <br/>
+<br/>
                         50ml: $6800
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                    </article>
-                <article class="producto" data-genero="hombre" data-categoria="diseñador">
-                    <img src="Badboy cobalt elixir.jpg" alt="Perfume #">
-                    <p class="nombreProducto">Bad Boy CobaltElixir</p>
-                    <p class="precioProducto">100ml: <br>
-                        50ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="hombre">
+<img alt="Perfume #" src="img/Badboy cobalt elixir.jpg"/>
+<p class="nombreProducto">Bad Boy CobaltElixir</p>
+<p class="precioProducto">100ml: <br/>
+                        50ml:  <br/>
                         30ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                    </article>
-                <article class="producto" data-genero="hombre" data-categoria="diseñador">
-                    <img src="BadBoy prf.jpg" alt="Perfume #">
-                    <p class="nombreProducto">Bad Boy EDP</p>
-                    <p class="precioProducto">100ml: <br>
-                        50ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="hombre">
+<img alt="Perfume #" src="img/BadBoy prf.jpg"/>
+<p class="nombreProducto">Bad Boy EDP</p>
+<p class="precioProducto">100ml: <br/>
+                        50ml:  <br/>
                         30ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                    </article>
-                <article class="producto" data-genero="hombre" data-categoria="diseñador">
-                    <img src="BadBoy extreme.jpg" alt="Perfume #">
-                    <p class="nombreProducto">Bad Boy Extreme</p>
-                    <p class="precioProducto">100ml: <br>
-                        50ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="hombre">
+<img alt="Perfume #" src="img/BadBoy extreme.jpg"/>
+<p class="nombreProducto">Bad Boy Extreme</p>
+<p class="precioProducto">100ml: <br/>
+                        50ml:  <br/>
                         30ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                    </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="lady million empire.jpg" alt="Perfume #">
-                    <p class="nombreProducto">Lady Million Empire</p>
-                    <p class="precioProducto">100ml: <br>
-                        50ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/lady million empire.jpg"/>
+<p class="nombreProducto">Lady Million Empire</p>
+<p class="precioProducto">100ml: <br/>
+                        50ml:  <br/>
                         30ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                    </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="lady million royal.  jpg.jpg" alt="Perfume #">
-                    <p class="nombreProducto">Lady Million Royal</p>
-                    <p class="precioProducto">100ml: <br>
-                        50ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/lady million royal.  jpg.jpg"/>
+<p class="nombreProducto">Lady Million Royal</p>
+<p class="precioProducto">100ml: <br/>
+                        50ml:  <br/>
                         30ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                    </article>
-                <article class="producto" data-genero="mujer" data-categoria="diseñador">
-                    <img src="lady million.jpg" alt="Perfume #">
-                    <p class="nombreProducto">Lady Million EDP</p>
-                    <p class="precioProducto">100ml: <br>
-                        50ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="mujer">
+<img alt="Perfume #" src="img/lady million.jpg"/>
+<p class="nombreProducto">Lady Million EDP</p>
+<p class="precioProducto">100ml: <br/>
+                        50ml:  <br/>
                         30ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                    </article>
-                <article class="producto" data-genero="hombre" data-categoria="diseñador">
-                    <img src="one milion edt.jpg" alt="Perfume #">
-                    <p class="nombreProducto">One Million EDT</p>
-                    <p class="precioProducto">100ml: $5500 <br>
-                        <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="hombre">
+<img alt="Perfume #" src="img/one milion edt.jpg"/>
+<p class="nombreProducto">One Million EDT</p>
+<p class="precioProducto">100ml: $5500 <br/>
+<br/>
                         50ml: $3990
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                    </article>
-                <article class="producto" data-genero="hombre" data-categoria="diseñador">
-                    <img src="one million.webp" alt="Perfume #">
-                    <p class="nombreProducto">One Million EDP</p>
-                    <p class="precioProducto">100ml: <br>
-                        50ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="hombre">
+<img alt="Perfume #" src="img/one million.webp"/>
+<p class="nombreProducto">One Million EDP</p>
+<p class="precioProducto">100ml: <br/>
+                        50ml:  <br/>
                         30ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="hombre" data-categoria="diseñador">
-                    <img src="one millon royal.jpg" alt="Perfume #">
-                    <p class="nombreProducto">One Million Royal</p>
-                    <p class="precioProducto">100ml: <br>
-                        50ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="hombre">
+<img alt="Perfume #" src="img/one millon royal.jpg"/>
+<p class="nombreProducto">One Million Royal</p>
+<p class="precioProducto">100ml: <br/>
+                        50ml:  <br/>
                         30ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="hombre" data-categoria="diseñador">
-                    <img src="one million elixir.jpg" alt="Perfume #">
-                    <p class="nombreProducto">One Million</p>
-                    <p class="precioProducto">100ml: <br>
-                        50ml:  <br>
+</p></article>
+<article class="producto" data-categoria="diseñador" data-genero="hombre">
+<img alt="Perfume #" src="img/one million elixir.jpg"/>
+<p class="nombreProducto">One Million</p>
+<p class="precioProducto">100ml: <br/>
+                        50ml:  <br/>
                         30ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="" data-categoria="">
-                    <img src="cofre scandal.webp" alt="Perfume #">
-                    <p class="nombreProducto">Cofre Scandal</p>
-                    <p class="precioProducto">100ml+10ml+ gel 75ml: $6500 <br>
-                          <br>
-                        
-                    <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-                <article class="producto" data-genero="" data-categoria="">
-                    <img src="./im" alt="Perfume #">
-                    <p class="nombreProducto"></p>
-                    <p class="precioProducto">100ml: <br>
-                        50ml:  <br>
+</p></article>
+<article class="producto" data-categoria="" data-genero="">
+<img alt="Perfume #" src="img/cofre scandal.webp"/>
+<p class="nombreProducto">Cofre Scandal</p>
+<p class="precioProducto">100ml+10ml+ gel 75ml: $6500 <br/>
+<br/>
+<button class="agregarAlCarrito">Sellado/Tester/Decant</button>
+</p></article>
+<article class="producto" data-categoria="" data-genero="">
+<img alt="Perfume #" src="img/im"/>
+<p class="nombreProducto"></p>
+<p class="precioProducto">100ml: <br/>
+                        50ml:  <br/>
                         30ml:
                     <button class="agregarAlCarrito">Sellado/Tester/Decant</button>
-                </article>
-
-            </div>
-        </section>
-        <div class="cajaRedes">
-            <ul>
-                <li>
-                    <a href="https://www.instagram.com/niki_importacionesuy/" target="_blank" rel="noopener noreferrer">
-    <svg fill="#C18F96" viewBox="-143 145 512 512" xmlns="http://www.w3.org/2000/svg">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                        <g id="SVGRepo_iconCarrier">
-                            <g>
-                                <path
-                                    d="M113,446c24.8,0,45.1-20.2,45.1-45.1c0-9.8-3.2-18.9-8.5-26.3c-8.2-11.3-21.5-18.8-36.5-18.8s-28.3,7.4-36.5,18.8 c-5.3,7.4-8.5,16.5-8.5,26.3C68,425.8,88.2,446,113,446z">
-                                </path>
-                                <polygon points="211.4,345.9 211.4,308.1 211.4,302.5 205.8,302.5 168,302.6 168.2,346 ">
-                                </polygon>
-                                <path
-                                    d="M183,401c0,38.6-31.4,70-70,70c-38.6,0-70-31.4-70-70c0-9.3,1.9-18.2,5.2-26.3H10v104.8C10,493,21,504,34.5,504h157 c13.5,0,24.5-11,24.5-24.5V374.7h-38.2C181.2,382.8,183,391.7,183,401z">
-                                </path>
-                                <path
-                                    d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M241,374.7v104.8 c0,27.3-22.2,49.5-49.5,49.5h-157C7.2,529-15,506.8-15,479.5V374.7v-52.3c0-27.3,22.2-49.5,49.5-49.5h157 c27.3,0,49.5,22.2,49.5,49.5V374.7z">
-                                </path>
-                            </g>
-                        </g>
-                    </svg>
-                </li>
-            </ul>
-        </div>
-    </main>
-    <script>
+</p></article>
+</div>
+</section>
+<div class="cajaRedes">
+<ul>
+<li>
+<a href="https://www.instagram.com/niki_importacionesuy/" rel="noopener noreferrer" target="_blank">
+<svg fill="#C18F96" viewbox="-143 145 512 512" xmlns="http://www.w3.org/2000/svg">
+<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+<g id="SVGRepo_iconCarrier">
+<g>
+<path d="M113,446c24.8,0,45.1-20.2,45.1-45.1c0-9.8-3.2-18.9-8.5-26.3c-8.2-11.3-21.5-18.8-36.5-18.8s-28.3,7.4-36.5,18.8 c-5.3,7.4-8.5,16.5-8.5,26.3C68,425.8,88.2,446,113,446z">
+</path>
+<polygon points="211.4,345.9 211.4,308.1 211.4,302.5 205.8,302.5 168,302.6 168.2,346 ">
+</polygon>
+<path d="M183,401c0,38.6-31.4,70-70,70c-38.6,0-70-31.4-70-70c0-9.3,1.9-18.2,5.2-26.3H10v104.8C10,493,21,504,34.5,504h157 c13.5,0,24.5-11,24.5-24.5V374.7h-38.2C181.2,382.8,183,391.7,183,401z">
+</path>
+<path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M241,374.7v104.8 c0,27.3-22.2,49.5-49.5,49.5h-157C7.2,529-15,506.8-15,479.5V374.7v-52.3c0-27.3,22.2-49.5,49.5-49.5h157 c27.3,0,49.5,22.2,49.5,49.5V374.7z">
+</path>
+</g>
+</g>
+</svg>
+</a></li>
+</ul>
+</div>
+</main>
+<script>
   function toggleFiltros() {
     const menu = document.getElementById("menu-filtros");
     menu.classList.toggle("activo");
@@ -819,7 +810,5 @@
     });
   }
 </script>
-
 </body>
-
 </html>
