@@ -355,3 +355,14 @@ h1, h2, h3 {
         padding: 20px 0;
     }
 }
+.product-button a,
+.product-button a:visited,
+.product-button a:link,
+.product-button a:active {
+    color: #7A2E36 !important;  
+    text-decoration: none !important;
+}
+
+.product-button a:hover {
+    color: #4c1c21 !important;
+}
