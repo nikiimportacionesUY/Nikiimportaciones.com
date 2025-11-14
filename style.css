@@ -385,3 +385,14 @@ h1, h2, h3 {
     border-radius: 10px !important;
     overflow: hidden !important;  
 }
+
+
+/* Fix color of ENCARGAR button */
+.agregarAlCarrito,
+.agregarAlCarrito:link,
+.agregarAlCarrito:visited,
+.agregarAlCarrito:hover,
+.agregarAlCarrito:active {
+    color: #000000 !important;
+    text-decoration: none !important;
+}
