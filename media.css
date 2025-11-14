@@ -149,3 +149,26 @@
         font-size: 16px !important;
     }
 }
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
+
+    /* Bajar un poquito la imagen */
+    .cajaImagen {
+        max-height: 280px !important; /* antes 350px */
+        margin-top: 10px;
+    }
+
+    /* Ajustar el espacio del logo y texto */
+    .cajaPrincipalCatalogo {
+        margin-top: 0px !important;
+        padding-top: 10px !important;
+    }
+
+    .textoInicio {
+        font-size: 15px !important;
+        margin-bottom: 6px !important;
+    }
+
+    .botonCatalogo {
+        margin-top: 10px !important;
+    }
+}
