@@ -396,3 +396,11 @@ h1, h2, h3 {
     color: #000000 !important;
     text-decoration: none !important;
 }
+/* Ajuste del tamaño del logo en la página principal */
+.cajaPrincipalCatalogo img {
+    width: 300px;          /* tamaño ideal */
+    max-width: 80%;        /* que no se pase en pantallas chicas */
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;   /* centrado con un poco de espacio abajo */
+}
